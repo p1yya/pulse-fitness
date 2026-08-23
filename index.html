@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile-first: this viewport tag is what makes the phone layout the real layout, not a scaled-down desktop one -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE Fitness Club | Panchkula</title>
+  <meta name="description" content="PULSE Fitness Club, Panchkula — gym, indoor games, yoga, pilates and meditation under one roof.">
+
+  <!-- Google Fonts: Anton (display / headings), Work Sans (body), JetBrains Mono (stats & labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23E4572E' d='M2 12h4l2-7 4 14 3-9 2 2h5' stroke='%23E4572E' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       TOP NAVIGATION — identical block on every page. The current
+       page's tab carries class "is-active".
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">
+        <svg class="logo-pulse" viewBox="0 0 60 20" aria-hidden="true">
+          <polyline points="0,10 12,10 16,2 20,18 24,10 60,10" />
+        </svg>
+        PULSE
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link is-active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gym.html" class="nav-link">Gym</a></li>
+        <li><a href="yoga.html" class="nav-link">Yoga &amp; Pilates</a></li>
+        <li><a href="meditation.html" class="nav-link">Meditation</a></li>
+        <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+        <li><a href="membership.html" class="nav-link">Membership</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to night mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO — a stronger headline, two clear CTAs, layered overlay
+         for legibility, and a centered scroll cue.
+         ============================================================ -->
+    <section id="home" class="hero">
+      <img
+        class="hero-bg"
+        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80"
+        alt="Athlete lifting a barbell in a dim, moody gym">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <p class="eyebrow mono">Panchkula &mdash; open 7 days a week</p>
+        <h1 class="hero-title">
+          TRAIN HARD.<br>
+          FLOW SLOW.<br>
+          <span class="accent-sage">BREATHE DEEP.</span>
+        </h1>
+        <p class="hero-sub">
+          Panchkula's only fitness club built around a full gym floor, three
+          indoor courts, and calm studio space for yoga, pilates and
+          meditation — one membership, every kind of workout your week needs.
+        </p>
+        <div class="hero-actions">
+          <a href="membership.html" class="btn btn-primary">See Membership Plans</a>
+          <a href="schedule.html" class="btn btn-ghost">View Class Schedule</a>
+        </div>
+      </div>
+
+      <a href="#stats" class="scroll-cue" aria-label="Scroll down to see PULSE in numbers">
+        <span>Scroll</span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         STATS STRIP
+         ============================================================ -->
+    <section id="stats" class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat">
+          <span class="stat-num mono">900+</span>
+          <span class="stat-label">active members</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num mono">30</span>
+          <span class="stat-label">classes / week</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num mono">3</span>
+          <span class="stat-label">indoor courts</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num mono">15,000 sqft</span>
+          <span class="stat-label">of floor space</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT PULSE — short teaser, full story lives on about.html
+         ============================================================ -->
+    <section class="section section-neutral" aria-labelledby="about-teaser-heading">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Wide view of the PULSE gym floor">
+          <div class="about-badge">
+            <span class="stat-num mono">Est. Panchkula</span>
+            <span class="stat-label">Sector 8, Panchkula</span>
+          </div>
+        </div>
+        <div class="about-text text-left">
+          <p class="eyebrow mono accent-ember">Who we are</p>
+          <h2 id="about-teaser-heading" class="section-title">ONE CLUB. EVERY KIND OF FIT.</h2>
+          <p>
+            PULSE was built on a simple idea: strength training and stillness
+            shouldn't need two separate memberships, two separate buildings,
+            or two separate versions of you. Under one Panchkula roof, an
+            energetic gym floor and courts sit alongside a genuinely calm
+            studio for yoga, pilates and meditation.
+          </p>
+          <a href="about.html" class="btn btn-ghost">Read Our Full Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY CHOOSE PULSE
+         ============================================================ -->
+    <section class="section section-calm-alt" aria-labelledby="why-heading">
+      <div class="container">
+        <p class="eyebrow mono accent-sage">Why members stay</p>
+        <h2 id="why-heading" class="section-title">WHY CHOOSE PULSE?</h2>
+        <p class="section-lead">
+          Four things members mention most when they're asked why PULSE,
+          and not the gym down the road.
+        </p>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="icon-badge" aria-hidden="true">🏋️</div>
+            <h3>Modern Equipment</h3>
+            <p>Fresh racks, plates and cardio machines, serviced regularly — nothing held together with tape.</p>
+          </article>
+          <article class="why-card">
+            <div class="icon-badge" aria-hidden="true">🎓</div>
+            <h3>Expert Trainers</h3>
+            <p>Certified strength coaches and studio instructors on the floor every session, not just at induction.</p>
+          </article>
+          <article class="why-card">
+            <div class="icon-badge is-sage" aria-hidden="true">🏸</div>
+            <h3>Multiple Activities</h3>
+            <p>Gym, badminton, basketball, table tennis, yoga, pilates and meditation — one card gets you into all of it.</p>
+          </article>
+          <article class="why-card">
+            <div class="icon-badge is-sage" aria-hidden="true">🧘</div>
+            <h3>Mind &amp; Body Wellness</h3>
+            <p>A meditation room and studio kept deliberately separate from the noise of the gym floor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SIGNATURE DIVIDER — heartbeat pulse morphing into a wave.
+         ============================================================ -->
+    <div class="pulse-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path class="pulse-line"
+          d="M0,60 L150,60 L180,15 L210,100 L240,60 L420,60
+             C 520,60 560,60 620,60
+             C 700,60 720,40 780,60
+             C 840,80 860,40 920,60
+             C 980,80 1020,40 1080,60
+             C 1120,72 1160,50 1200,60" />
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         FACILITIES PREVIEW — quick links into every program page
+         ============================================================ -->
+    <section class="section section-neutral" aria-labelledby="fac-preview-heading">
+      <div class="container">
+        <p class="eyebrow mono">Everything, under one roof</p>
+        <h2 id="fac-preview-heading" class="section-title">OUR FACILITIES</h2>
+        <p class="section-lead">A quick look at what's on offer — tap any card for the full details.</p>
+
+        <div class="facilities-grid">
+          <article class="facility-card">
+            <h3>Gym Floor</h3>
+            <p>Free weights, machines, functional zone and cardio deck.</p>
+            <a href="gym.html">Explore the Gym →</a>
+          </article>
+          <article class="facility-card is-calm">
+            <h3>Yoga &amp; Pilates</h3>
+            <p>Sprung-floor studio for Hatha, Vinyasa and mat pilates.</p>
+            <a href="yoga.html">Explore Yoga &amp; Pilates →</a>
+          </article>
+          <article class="facility-card is-calm">
+            <h3>Meditation Room</h3>
+            <p>A quiet, low-light room for guided and silent sessions.</p>
+            <a href="meditation.html">Explore Meditation →</a>
+          </article>
+          <article class="facility-card">
+            <h3>Badminton</h3>
+            <p>Two wooden-floor courts, racket hire at the front desk.</p>
+            <a href="facilities.html#games">See All Facilities →</a>
+          </article>
+          <article class="facility-card">
+            <h3>Basketball</h3>
+            <p>Half-court for pickup games and weekend 3-on-3 sessions.</p>
+            <a href="facilities.html#games">See All Facilities →</a>
+          </article>
+          <article class="facility-card">
+            <h3>Table Tennis</h3>
+            <p>Two tables in the games corner, open most evenings.</p>
+            <a href="facilities.html#games">See All Facilities →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready to move differently?</h2>
+        <p>First class or gym session is on us — come see Panchkula's calmest gym.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Book a Free Trial</a>
+          <a href="membership.html" class="btn btn-ghost">Compare Plans</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — identical block on every page
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <p class="logo" style="justify-content:center;">
+          <svg class="logo-pulse" viewBox="0 0 60 20" aria-hidden="true">
+            <polyline points="0,10 12,10 16,2 20,18 24,10 60,10" />
+          </svg>
+          PULSE
+        </p>
+        <p class="footer-tagline">Train hard. Flow slow. Breathe.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="PULSE on Instagram">IG</a>
+          <a href="#" aria-label="PULSE on Facebook">FB</a>
+          <a href="#" aria-label="PULSE on YouTube">YT</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About PULSE</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Programs">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="gym.html">Gym</a></li>
+          <li><a href="yoga.html">Yoga &amp; Pilates</a></li>
+          <li><a href="meditation.html">Meditation</a></li>
+          <li><a href="facilities.html#games">Indoor Games</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Sector 8, Panchkula, Haryana</li>
+          <li><a href="tel:+911234567890">+91 12345 67890</a></li>
+          <li><a href="mailto:hello@pulsefitness.example">hello@pulsefitness.example</a></li>
+          <li>Mon&ndash;Sat, 6 AM&ndash;10 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      &copy; 2026 PULSE Fitness Club, Panchkula. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
